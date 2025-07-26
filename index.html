@@ -45,6 +45,19 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+    
+    section.agenda {
+      background-color: #f9fff9;
+      padding: 40px 20px;
+      border-top: 3px solid #ffffaa;
+    }
+
+    section.agenda h2 {
+      text-align: center;
+      color: #228B22;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
 
     .linha {
         color: #000000;
@@ -67,6 +80,15 @@
     footer span {
       display: block;
       margin: 5px 0;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      margin: 0 auto;
+      display: block;
     }
   </style>
 </head>
@@ -93,11 +115,60 @@
     </p>
   </main>
 
+    <section class="agenda">
+    <h2>📅 Agenda de Eventos</h2>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=a4e303f948d733817dadd79df6573c879985623d4513f4fb52aec3449808482e%40group.calendar.google.com&ctz=America%2FSao_Paulo">
+    </iframe>
+  </section>
+
+  <!-- Mapa do Google Maps -->
+<section style="padding: 40px 20px; background-color: #f5fff5;">
+  <h2 style="text-align: center; color: #228B22; font-size: 28px; margin-bottom: 20px;">📍 Como chegar</h2>
+  <div style="max-width: 800px; margin: 0 auto;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5484455108983!2d-46.6565766855228!3d-23.586168668862596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8d75e4b75%3A0x3c3090a0f0af1f98!2sAv.%20Alfredo%20Ribeiro%20de%20Castro%2C%20564%20-%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1720000000000"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
   <footer>
     <span>📍 Av. Alfredo Ribeiro de Castro, 564</span>
     <span>📅 Reuniões: Uma a cada duas semanas, às Quintas-Feiras</span>
     <span>🕗 Horário: 20:00</span>
   </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5511999999999?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Tenda%20de%20Umbanda%20Santa%20Bárbara"
+   target="_blank"
+   title="Fale conosco pelo WhatsApp"
+   style="
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #25D366;
+     color: white;
+     padding: 14px 18px;
+     border-radius: 50px;
+     text-decoration: none;
+     font-size: 16px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+     z-index: 999;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+   ">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" width="20" height="20" style="filter: invert(1);">
+  Fale conosco
+</a>
+
 
 </body>
 </html>
