@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Tenda de Umbanda Santa Bárbara</title>
+  <title>T.U. Santa Bárbara</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: lightgreen;
+      background-color: lightskyblue;
       color: #333;
     }
 
@@ -22,6 +22,13 @@
       color: #228B22; /* Verde escuro */
       margin: 0;
       font-size: 36px;
+    }
+
+    .imagens {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15% 0 15%;
     }
 
     .estrela {
@@ -47,7 +54,7 @@
     }
     
     section.agenda {
-      background-color: #f9fff9;
+      background-color: lightskyblue;
       padding: 40px 20px;
       border-top: 3px solid #ffffaa;
     }
@@ -69,7 +76,7 @@
     }
 
     footer {
-      background-color: #228B22;
+      background-color: blue;
       color: #fff;
       text-align: center;
       padding: 20px;
@@ -90,15 +97,77 @@
       margin: 0 auto;
       display: block;
     }
+
+    .whatsapp {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #25D366;
+     color: white;
+     padding: 1.5% 3%;
+     border-radius: 50px;
+     text-decoration: none;
+     font-size: 16px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+     z-index: 999;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+    }
+
+    .whatsapp_img {
+      width: 25px;
+    }
+
+    @media (max-width: 1100px) {
+
+      .iansa img {
+        width: 75%;
+      }
+
+      .iansa {
+        margin-top: 15px;
+      }
+
+      .estrela {
+      margin-top: 20px;
+    }
+
+    .estrela img {
+      width: auto;
+      height: auto;
+    }
+
+    .whatsapp {
+      padding: 3.5% 6%;
+      font-size: 200%;
+    }
+
+    .whatsapp_img {
+      width: 50px;
+    }
+
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Tenda de Umbanda Santa Bárbara</h1>
-    <div class="estrela">
-      <img src="https://th.bing.com/th/id/OIP.UirdioVYolDlRYCc7Hnr1gHaHM?w=174&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="Estrela de sete pontas">
-    </div>
+    <h1>T.U. Santa Bárbara</h1>
+    <section class="imagens">
+      <div class="iansa">
+        <img src="./iansã.webp" alt="Iansã">
+      </div>
+      <div class="estrela">
+        <img src="https://th.bing.com/th/id/OIP.UirdioVYolDlRYCc7Hnr1gHaHM?w=174&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="Estrela de sete pontas">
+      </div>
+      <div class="iansa">
+        <img src="./iansã.webp" alt="Iansã">
+      </div>
+    </section>
+    
   </header>
 
   <main>
@@ -147,28 +216,9 @@
   <!-- Botão flutuante do WhatsApp -->
 <a href="https://wa.me/5511951049589?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Tenda%20de%20Umbanda%20Santa%20Bárbara"
    target="_blank"
-   title="Fale conosco pelo WhatsApp"
-   style="
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     background-color: #25D366;
-     color: white;
-     padding: 14px 18px;
-     border-radius: 50px;
-     text-decoration: none;
-     font-size: 16px;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-     z-index: 999;
-     font-weight: bold;
-     display: flex;
-     align-items: center;
-     gap: 8px;
-   ">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" width="20" height="20" style="filter: invert(1);">
+   title="Fale conosco pelo WhatsApp" class="whatsapp">
+  <img src="./whatsappimg.svg" alt="WhatsApp" style="filter: invert(1);" class="whatsapp_img">
   Fale conosco
 </a>
-
-
 </body>
 </html>
